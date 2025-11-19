@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "test": "cucumber-js --require step_definitions/**/*.js --require utils/**/*.js --format progress features/**/*.feature"
+  "test": "cucumber-js --require step_definitions/**/*.js --require utils/**/*.js --format progress features/**/*.feature",
+  "playwright:install": "npx playwright install",
+  "playwright:codegen": "npx playwright codegen",
+  "test:headed": "cross-env HEADLESS=false npm test"
   },
   "keywords": [],
   "author": "",
